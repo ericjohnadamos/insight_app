@@ -113,7 +113,7 @@
 		2571DF9C18A93622006A77CD /* Insight */ = {
 			isa = PBXGroup;
 			children = (
-				2571DFC518A93AB9006A77CD /* Controller */,
+				2571DFC518A93AB9006A77CD /* View Controllers */,
 				2571DFA518A93622006A77CD /* SSAppDelegate.h */,
 				2571DFA618A93622006A77CD /* SSAppDelegate.m */,
 				2571DFA818A93622006A77CD /* Images.xcassets */,
@@ -151,7 +151,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2571DFC518A93AB9006A77CD /* Controller */ = {
+		2571DFC518A93AB9006A77CD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2571DFC618A93ADB006A77CD /* SSInsightListControllerViewController.h */,
@@ -159,7 +159,7 @@
 				2575616A18B2C5EB00061327 /* SSFeedbackViewController.h */,
 				2575616B18B2C5EB00061327 /* SSFeedbackViewController.m */,
 			);
-			name = Controller;
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
