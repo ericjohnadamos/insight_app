@@ -49,15 +49,15 @@
 #pragma mark -
 #pragma mark Lazy loaders
 
-- (void) setQuestionText: (NSString*) questionText
+- (void) setHeaderText: (NSString*) headerText
 {
-  self.questionLabel.text = questionText;
+  self.questionLabel.text = headerText;
   
   NSStringDrawingContext* context = [[NSStringDrawingContext alloc] init];
   context.minimumScaleFactor = 0.7f;
   
   CGSize labelSize = CGSizeMake(self.bounds.size.width, MAXFLOAT);
-  [self.questionLabel.text
+  [headerText
    boundingRectWithSize: labelSize
                 options: NSStringDrawingUsesLineFragmentOrigin
              attributes: @{NSFontAttributeName: self.questionLabel.font}

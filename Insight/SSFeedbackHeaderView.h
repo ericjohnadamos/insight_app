@@ -10,6 +10,6 @@
 
 @interface SSFeedbackHeaderView : UIView
 
-@property (nonatomic, assign) NSString* questionText;
+@property (nonatomic, copy) NSString* headerText;
 
 @end
