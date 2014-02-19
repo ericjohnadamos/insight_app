@@ -80,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25625BBF18B430E6007E00DB /* Application Proper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Application Proper";
+			sourceTree = "<group>";
+		};
 		2571DF8A18A93622006A77CD = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +120,7 @@
 		2571DF9C18A93622006A77CD /* Insight */ = {
 			isa = PBXGroup;
 			children = (
+				25625BBF18B430E6007E00DB /* Application Proper */,
 				2571DFC518A93AB9006A77CD /* View Controllers */,
 				2571DFA518A93622006A77CD /* SSAppDelegate.h */,
 				2571DFA618A93622006A77CD /* SSAppDelegate.m */,
