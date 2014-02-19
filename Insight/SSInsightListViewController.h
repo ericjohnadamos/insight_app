@@ -1,5 +1,5 @@
 //
-//  SSInsightListControllerViewController.h
+//  SSInsightListViewController.h
 //  Insight
 //
 //  Created by Eric John Adamos on 2/11/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SSInsightListControllerViewController : UIViewController
+@interface SSInsightListViewController : UIViewController
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "SSAppDelegate.h"
-#import "SSInsightListControllerViewController.h"
+#import "SSInsightListViewController.h"
 
 
 @implementation SSAppDelegate
@@ -22,8 +22,8 @@ didFinishLaunchingWithOptions: (NSDictionary*)  launchOptions
   self.window.backgroundColor = [UIColor whiteColor];
   
 
-  SSInsightListControllerViewController* controller
-    = [[SSInsightListControllerViewController alloc] init];
+  SSInsightListViewController* controller
+    = [[SSInsightListViewController alloc] init];
   UINavigationController* navController
     = [[UINavigationController alloc] initWithRootViewController: controller];
   

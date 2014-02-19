@@ -20,7 +20,7 @@
 		2571DFB218A93622006A77CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2571DF9A18A93622006A77CD /* UIKit.framework */; };
 		2571DFBA18A93622006A77CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2571DFB818A93622006A77CD /* InfoPlist.strings */; };
 		2571DFBC18A93622006A77CD /* InsightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2571DFBB18A93622006A77CD /* InsightTests.m */; };
-		2571DFC818A93ADB006A77CD /* SSInsightListControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2571DFC718A93ADB006A77CD /* SSInsightListControllerViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2571DFC818A93ADB006A77CD /* SSInsightListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2571DFC718A93ADB006A77CD /* SSInsightListViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2575616C18B2C5EB00061327 /* SSFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2575616B18B2C5EB00061327 /* SSFeedbackViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +53,8 @@
 		2571DFB718A93622006A77CD /* InsightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InsightTests-Info.plist"; sourceTree = "<group>"; };
 		2571DFB918A93622006A77CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2571DFBB18A93622006A77CD /* InsightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsightTests.m; sourceTree = "<group>"; };
-		2571DFC618A93ADB006A77CD /* SSInsightListControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSInsightListControllerViewController.h; sourceTree = "<group>"; };
-		2571DFC718A93ADB006A77CD /* SSInsightListControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSInsightListControllerViewController.m; sourceTree = "<group>"; };
+		2571DFC618A93ADB006A77CD /* SSInsightListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSInsightListViewController.h; sourceTree = "<group>"; };
+		2571DFC718A93ADB006A77CD /* SSInsightListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSInsightListViewController.m; sourceTree = "<group>"; };
 		2575616A18B2C5EB00061327 /* SSFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFeedbackViewController.h; sourceTree = "<group>"; };
 		2575616B18B2C5EB00061327 /* SSFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFeedbackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,8 +191,8 @@
 		2571DFC518A93AB9006A77CD /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2571DFC618A93ADB006A77CD /* SSInsightListControllerViewController.h */,
-				2571DFC718A93ADB006A77CD /* SSInsightListControllerViewController.m */,
+				2571DFC618A93ADB006A77CD /* SSInsightListViewController.h */,
+				2571DFC718A93ADB006A77CD /* SSInsightListViewController.m */,
 				2575616A18B2C5EB00061327 /* SSFeedbackViewController.h */,
 				2575616B18B2C5EB00061327 /* SSFeedbackViewController.m */,
 			);
@@ -301,7 +301,7 @@
 				2571DFA718A93622006A77CD /* SSAppDelegate.m in Sources */,
 				2571DFA318A93622006A77CD /* main.m in Sources */,
 				25625BC318B432F0007E00DB /* SSFeedbackListCell.m in Sources */,
-				2571DFC818A93ADB006A77CD /* SSInsightListControllerViewController.m in Sources */,
+				2571DFC818A93ADB006A77CD /* SSInsightListViewController.m in Sources */,
 				2575616C18B2C5EB00061327 /* SSFeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

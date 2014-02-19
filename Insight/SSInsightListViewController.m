@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Eric John Adamos. All rights reserved.
 //
 
-#import "SSInsightListControllerViewController.h"
+#import "SSInsightListViewController.h"
 #import "SSFeedbackViewController.h"
 
 
@@ -16,7 +16,7 @@ typedef enum
   kQuestionnairePopupButtonSubmit = 1
 } kQuestionnairePopupButton;
 
-@interface SSInsightListControllerViewController ()
+@interface SSInsightListViewController ()
   <UIImagePickerControllerDelegate,
    UITableViewDataSource, UITableViewDelegate,
    UINavigationControllerDelegate,
@@ -29,7 +29,7 @@ typedef enum
 @end
 
 
-@implementation SSInsightListControllerViewController
+@implementation SSInsightListViewController
 
 #pragma mark -
 #pragma mark Synthesize properties
@@ -171,6 +171,10 @@ heightForRowAtIndexPath: (NSIndexPath*) indexPath
 - (void)      tableView: (UITableView*) tableView
 didSelectRowAtIndexPath: (NSIndexPath*) indexPath
 {
+  /* Deselect the selected row */
+  [tableView deselectRowAtIndexPath: indexPath
+                           animated: NO];
+  
   SSFeedbackViewController* feedbackController
     = [[SSFeedbackViewController alloc] init];
   [feedbackController autorelease];
