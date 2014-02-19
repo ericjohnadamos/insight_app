@@ -10,6 +10,9 @@
 
 @implementation SSFeedbackListCell
 
+#pragma mark -
+#pragma mark Initializer
+
 - (id) initWithStyle: (UITableViewCellStyle) style
      reuseIdentifier: (NSString*) reuseIdentifier
 {
@@ -18,7 +21,7 @@
   
   if (self != nil)
   {
-
+    /* TODO: Implement me */
   }
   
   return self;
