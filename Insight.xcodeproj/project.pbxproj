@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2545086D18B508FE00AD6FFC /* SSFeedbackHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545086C18B508FE00AD6FFC /* SSFeedbackHeaderView.m */; };
 		25625BC318B432F0007E00DB /* SSFeedbackListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25625BC218B432F0007E00DB /* SSFeedbackListCell.m */; };
 		2571DF9718A93622006A77CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2571DF9618A93622006A77CD /* Foundation.framework */; };
 		2571DF9918A93622006A77CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2571DF9818A93622006A77CD /* CoreGraphics.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2545086B18B508FE00AD6FFC /* SSFeedbackHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFeedbackHeaderView.h; sourceTree = "<group>"; };
+		2545086C18B508FE00AD6FFC /* SSFeedbackHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFeedbackHeaderView.m; sourceTree = "<group>"; };
 		25625BC118B432F0007E00DB /* SSFeedbackListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSFeedbackListCell.h; sourceTree = "<group>"; };
 		25625BC218B432F0007E00DB /* SSFeedbackListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSFeedbackListCell.m; sourceTree = "<group>"; };
 		2571DF9318A93622006A77CD /* Insight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +116,8 @@
 		25625BC418B43340007E00DB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2545086B18B508FE00AD6FFC /* SSFeedbackHeaderView.h */,
+				2545086C18B508FE00AD6FFC /* SSFeedbackHeaderView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			files = (
 				2571DFA718A93622006A77CD /* SSAppDelegate.m in Sources */,
 				2571DFA318A93622006A77CD /* main.m in Sources */,
+				2545086D18B508FE00AD6FFC /* SSFeedbackHeaderView.m in Sources */,
 				25625BC318B432F0007E00DB /* SSFeedbackListCell.m in Sources */,
 				2571DFC818A93ADB006A77CD /* SSInsightListViewController.m in Sources */,
 				2575616C18B2C5EB00061327 /* SSFeedbackViewController.m in Sources */,
