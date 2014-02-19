@@ -103,13 +103,21 @@
   CGRect navBarFrame = self.navigationController.navigationBar.frame;
   
   self.segmentControl.frame
-    = CGRectMake(0, CGRectGetMaxY(navBarFrame), viewSize.width, 44);
+    = CGRectMake(0, CGRectGetMaxY(navBarFrame) + 150, viewSize.width, 44);
+  self.segmentControl.selectedSegmentIndex = 0;
+  
+  self.headerView.headerText = self.headerText;
 }
 
 - (void) addSubviews
 {
   [self.view addSubview: self.segmentControl];
   [self.view addSubview: self.headerView];
+}
+
+- (void) handleSegmentedControl
+{
+  /* TODO */
 }
 
 @end
