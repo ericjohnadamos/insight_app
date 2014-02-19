@@ -32,6 +32,8 @@
 - (void) dealloc
 {
   self.headerView = nil;
+  self.segmentControl = nil;
+  
   [super dealloc];
 }
 
