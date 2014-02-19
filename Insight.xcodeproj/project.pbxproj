@@ -83,9 +83,17 @@
 		25625BBF18B430E6007E00DB /* Application Proper */ = {
 			isa = PBXGroup;
 			children = (
+				25625BC018B432AA007E00DB /* Table view cells */,
 				2571DFC518A93AB9006A77CD /* View Controllers */,
 			);
 			name = "Application Proper";
+			sourceTree = "<group>";
+		};
+		25625BC018B432AA007E00DB /* Table view cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Table view cells";
 			sourceTree = "<group>";
 		};
 		2571DF8A18A93622006A77CD = {
