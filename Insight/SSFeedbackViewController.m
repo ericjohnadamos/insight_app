@@ -7,10 +7,12 @@
 //
 
 #import "SSFeedbackViewController.h"
+#import "SSFeedbackHeaderView.h"
 
 
 @interface SSFeedbackViewController ()
 
+@property (nonatomic, retain) SSFeedbackHeaderView* headerView;
 @property (nonatomic, retain) UISegmentedControl* segmentControl;
 
 @end
@@ -21,6 +23,7 @@
 #pragma mark -
 #pragma mark Synthesize properties
 
+@synthesize headerView = m_headerView;
 @synthesize segmentControl = m_segmentControl;
 
 #pragma mark -
@@ -28,11 +31,31 @@
 
 - (void) dealloc
 {
+  self.headerView = nil;
   [super dealloc];
 }
 
 #pragma mark -
 #pragma mark Lazy loaders
+
+- (SSFeedbackHeaderView*) headerView
+{
+  if (m_headerView == nil)
+  {
+    CGSize viewSize = self.view.bounds.size;
+    CGRect navBarFrame = self.navigationController.navigationBar.frame;
+    
+    CGRect frame
+      = CGRectMake(0.0f, CGRectGetMaxY(navBarFrame), viewSize.width, 100.0f);
+    
+    SSFeedbackHeaderView* headerView
+      = [[SSFeedbackHeaderView alloc] initWithFrame: frame];
+    
+    m_headerView = headerView;
+  }
+  
+  return m_headerView;
+}
 
 - (UISegmentedControl*) segmentControl
 {
@@ -80,6 +103,7 @@
 - (void) addSubviews
 {
   [self.view addSubview: self.segmentControl];
+  [self.view addSubview: self.headerView];
 }
 
 @end
