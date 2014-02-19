@@ -26,6 +26,8 @@ typedef enum
 @property (nonatomic, retain) UITableView* tableView;
 @property (nonatomic, retain) UIAlertView* questionPopupView;
 
+@property (nonatomic, retain) NSArray* tempDataSource;
+
 @end
 
 
@@ -38,6 +40,8 @@ typedef enum
 @synthesize tableView = m_tableView;
 @synthesize questionPopupView = m_questionPopupView;
 
+@synthesize tempDataSource = m_tempDataSource;
+
 #pragma mark -
 #pragma mark Memory deallocation
 
@@ -46,6 +50,8 @@ typedef enum
   self.imagePickerController = nil;
   self.tableView = nil;
   self.questionPopupView = nil;
+  
+  self.tempDataSource = nil;
   
   [super dealloc];
 }
@@ -105,6 +111,34 @@ typedef enum
   }
   
   return m_questionPopupView;
+}
+
+- (NSArray*) tempDataSource
+{
+  if (m_tempDataSource == nil)
+  {
+    NSArray* tempDataSource
+      = @[@"Which sentence best states the theme/message/major/main idea of the story/selection/section/poem/process?",
+          @"Based on the information, which is an opinion rather than a fact about immigrants to North America? Immigrants…",
+          @"What is the theme/message/major/main idea of the story/selection/section/poem/process/paragraph (number)?",
+          @"Which title could be another title for the story/selection/section/poem/process?",
+          @"How Shall Employees Conduct Themselves? ",
+          @"What could be another title for the story/selection/section/poem/process?",
+          @"Which question does paragraph (number) answer?",
+          @"What is the current balance in Tisha’s checking account?",
+          @"Which synonym could replace poise in the sentence above?",
+          @"Analyze usefulness of resources",
+          @"Demonstrate understanding of theme/message/main idea and supporting details",
+          @"Summarize with evidence from the text",
+          @"Make or confirm inferences or predictions based on the text",
+          @"Understand and apply content vocabulary critical to the meaning of the text",
+          @"Compare and contrast using elements of the text(s)",
+          @"Make connections (cause and effect) within a text"];
+    
+    m_tempDataSource = [tempDataSource retain];
+  }
+  
+  return m_tempDataSource;
 }
 
 #pragma mark -
@@ -179,6 +213,8 @@ didSelectRowAtIndexPath: (NSIndexPath*) indexPath
     = [[SSFeedbackViewController alloc] init];
   [feedbackController autorelease];
   
+  feedbackController.headerText = self.tempDataSource[indexPath.row];
+  
   [self.navigationController pushViewController: feedbackController
                                        animated: YES];
 }
@@ -189,7 +225,7 @@ didSelectRowAtIndexPath: (NSIndexPath*) indexPath
 - (NSInteger) tableView: (UITableView*) tableView
   numberOfRowsInSection: (NSInteger)    section
 {
-  return 20;
+  return self.tempDataSource.count;
 }
 
 - (UITableViewCell*) tableView: (UITableView*) tableView
@@ -206,7 +242,8 @@ didSelectRowAtIndexPath: (NSIndexPath*) indexPath
                                   reuseIdentifier: identifier];
   }
   
-  cell.textLabel.text = [NSString stringWithFormat: @"item %ld", indexPath.row];
+  cell.textLabel.text = [NSString stringWithFormat:
+                         @"%@", self.tempDataSource[indexPath.row]];
   
   return cell;
 }
