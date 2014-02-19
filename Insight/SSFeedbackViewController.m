@@ -66,6 +66,10 @@
     UISegmentedControl* segmentControl
       = [[UISegmentedControl alloc] initWithItems: @[@"Rate", @"Comments"]];
     
+    [segmentControl addTarget: self
+                       action: @selector(handleSegmentedControl)
+             forControlEvents: UIControlEventTouchUpInside];
+    
     m_segmentControl = segmentControl;
   }
   
