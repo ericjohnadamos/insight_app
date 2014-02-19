@@ -10,4 +10,6 @@
 
 @interface SSFeedbackViewController : UIViewController
 
+@property (nonatomic, copy) NSString* headerText;
+
 @end
