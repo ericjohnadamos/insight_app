@@ -86,19 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2545086A18B5020D00AD6FFC /* Customs */ = {
+		2545086A18B5020D00AD6FFC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				25625BC018B432AA007E00DB /* Table view cells */,
 				25625BC418B43340007E00DB /* Views */,
 			);
-			name = Customs;
+			name = Foundation;
 			sourceTree = "<group>";
 		};
 		25625BBF18B430E6007E00DB /* Application Proper */ = {
 			isa = PBXGroup;
 			children = (
-				2545086A18B5020D00AD6FFC /* Customs */,
+				2545086A18B5020D00AD6FFC /* Foundation */,
 				2571DFC518A93AB9006A77CD /* View Controllers */,
 			);
 			name = "Application Proper";
