@@ -86,6 +86,7 @@
 		25625BBF18B430E6007E00DB /* Application Proper */ = {
 			isa = PBXGroup;
 			children = (
+				25625BC418B43340007E00DB /* Views */,
 				25625BC018B432AA007E00DB /* Table view cells */,
 				2571DFC518A93AB9006A77CD /* View Controllers */,
 			);
@@ -99,6 +100,13 @@
 				25625BC218B432F0007E00DB /* SSFeedbackListCell.m */,
 			);
 			name = "Table view cells";
+			sourceTree = "<group>";
+		};
+		25625BC418B43340007E00DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		2571DF8A18A93622006A77CD = {
